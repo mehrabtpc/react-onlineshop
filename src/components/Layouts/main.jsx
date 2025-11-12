@@ -7,6 +7,7 @@ import "./../../assets/css/vendors/fontawesome/fontawesome.min.css";
 import "./../../assets/css/vendors/swiper/swiper-bundle.min.css";
 import "./../../assets/css/vendors/countDown/jquery.countdown.css";
 import "./../../assets/css/style.css";
+import './../../assets/css/rtl.css';
 
 // // JS vendor
 // import "jquery";

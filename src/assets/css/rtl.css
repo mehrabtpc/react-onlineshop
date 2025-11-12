@@ -1,0 +1,11 @@
+/* rtl.css */
+body, html {
+    direction: rtl;
+    text-align: right;
+}
+
+/* برای کامپوننت‌هایی که به‌صورت خاص LTR بودن */
+.ltr {
+    direction: ltr;
+    text-align: left;
+}

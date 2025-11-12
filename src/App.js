@@ -1,9 +1,23 @@
-function App() {
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home/Home";
+import ProductList from './components/ProductList/ProductList';
+
+export default function App() {
   return (
-    <div className="App">
-        
+    <div>
+      <nav>
+        <Link to="/">خانه</Link> | <Link to="/about">درباره ما</Link>
+
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="products" element={ <ProductList /> } />
+
+        <Route path="*" element={<h1>صفحه یافت نشد</h1>} />
+
+      </Routes>
     </div>
   );
 }
-
-export default App;

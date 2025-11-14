@@ -4,6 +4,7 @@ import Master from "../Layouts/Master";
 export default function Home() {
   return (
     <Master>
+      <br /><br /><br />
       <main className="container mt-5">
         <section className="categories mt-5">
           <h2 className="text-center fs-4">دسته بندی ها</h2>
@@ -444,508 +445,504 @@ export default function Home() {
             </div>
           </div>
         </section>
-<section className="best-brands border-radius-3xl border border-gray-300 mt-4 pb-4">
-  <h2 className="text-center my-4 section-title fs-4">
-    <i className="fa fa-star"></i>
-    محبوب ترین برندها
-  </h2>
-  <div className="swiper brandsSlider">
-    <div className="swiper-wrapper">
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-1.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-2.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-3.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-4.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-8.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-7.jpg" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-8.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-9.jpg" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-10.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-11.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide position-relative">
-        <div className="brands-item d-flex justify-content-center align-items-center">
-          <a href="" title="" className="stretched-link">
-            <img src="assets/img/brand-13.png" alt="" title="" className="img-fluid p-3" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="swiper-button-next bg-light border-radius-circle"></div>
-    <div className="swiper-button-prev bg-light border-radius-circle"></div>
-  </div>
-</section>
+        <section className="best-brands border-radius-3xl border border-gray-300 mt-4 pb-4">
+          <h2 className="text-center my-4 section-title fs-4">
+            <i className="fa fa-star"></i>
+            محبوب ترین برندها
+          </h2>
+          <div className="swiper brandsSlider">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-1.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-2.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-3.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-4.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-8.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-7.jpg" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-8.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-9.jpg" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-10.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-11.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide position-relative">
+                <div className="brands-item d-flex justify-content-center align-items-center">
+                  <a href="" title="" className="stretched-link">
+                    <img src="assets/img/brand-13.png" alt="" title="" className="img-fluid p-3" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="swiper-button-next bg-light border-radius-circle"></div>
+            <div className="swiper-button-prev bg-light border-radius-circle"></div>
+          </div>
+        </section>
+        <section className="some-products border-radius-3xl border border-gray-300 mt-4 overflow-hidden">
+          <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-1.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-2.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-3.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-4.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-5.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-6.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-7.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-8.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-9.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-10.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-11.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-12.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
+            </div>
 
-<section className="some-products border-radius-3xl border border-gray-300 mt-4 overflow-hidden">
-  <div className="row">
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-1.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-2.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-3.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-4.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-5.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-6.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-7.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-8.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-9.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-10.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-11.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-12.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-13.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-14.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-15.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-16.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="best-sales-section mt-5 position-relative rounded-4 overflow-hidden">
-  <h2 className="text-center py-3 fw-semibold fs-4">
-    <i className="fa fa-bolt me-2 fs-6"></i>
-    محبوب‌ترین محصولات
-  </h2>
-
-  <div className="swiper bestSales px-2 py-4">
-    <div className="swiper-wrapper">
-      <div className="swiper-slide">
-        <div className="product-slide-item">
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
-            </div>
-            <div className="rank-number">1</div>
-            <div className="product-info">
-              <p>گوشی موبایل سامسونگ</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
-            </div>
-            <div className="rank-number">2</div>
-            <div className="product-info">
-              <p>گوشی موبایل هاوایی</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
-            </div>
-            <div className="rank-number">3</div>
-            <div className="product-info">
-              <p>گوشی موبایل نوکیا</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide">
-        <div className="product-slide-item">
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
-            </div>
-            <div className="rank-number">1</div>
-            <div className="product-info">
-              <p>گوشی موبایل سامسونگ</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
-            </div>
-            <div className="rank-number">2</div>
-            <div className="product-info">
-              <p>گوشی موبایل هاوایی</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
-            </div>
-            <div className="rank-number">3</div>
-            <div className="product-info">
-              <p>گوشی موبایل نوکیا</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide">
-        <div className="product-slide-item">
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
-            </div>
-            <div className="rank-number">1</div>
-            <div className="product-info">
-              <p>گوشی موبایل سامسونگ</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
-            </div>
-            <div className="rank-number">2</div>
-            <div className="product-info">
-              <p>گوشی موبایل هاوایی</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
-            </div>
-            <div className="rank-number">3</div>
-            <div className="product-info">
-              <p>گوشی موبایل نوکیا</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div className="swiper-slide">
-        <div className="product-slide-item">
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
-            </div>
-            <div className="rank-number">1</div>
-            <div className="product-info">
-              <p>گوشی موبایل سامسونگ</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
-            </div>
-            <div className="rank-number">2</div>
-            <div className="product-info">
-              <p>گوشی موبایل هاوایی</p>
-            </div>
-          </a>
-
-          <a href="#" className="d-flex align-items-center justify-content-between product-link">
-            <div className="product-image">
-              <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
-            </div>
-            <div className="rank-number">3</div>
-            <div className="product-info">
-              <p>گوشی موبایل نوکیا</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div className="swiper-button-next custom-swiper-btn"></div>
-    <div className="swiper-button-prev custom-swiper-btn"></div>
-  </div>
-
-  <a href="#" className="see-all text-center d-block mt-3">مشاهده‌ی تمام محصولات</a>
-</section>
-
-<section className="some-products border-radius-3xl border border-gray-300 mt-4 overflow-hidden">
-  <div className="row">
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-1.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-2.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-3.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-4.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-5.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-6.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-7.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-8.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-9.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-10.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-11.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-12.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
-      <div className="some-products-box p-4">
-        <div className="some-products-title">
-          <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
-          <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
-        </div>
-        <div className="some-products-images mt-3">
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-13.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-14.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-15.jpg" alt="" title="" className="img-fluid" />
-          </a>
-          <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
-            <img src="assets/img/some-p-16.jpg" alt="" title="" className="img-fluid" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section className="readable-articles mt-5" dir="rtl">
-  <div className="container-fluid">
-    <div className="d-flex align-items-center justify-content-between header mb-4 px-2 px-md-4">
-      <div className="section-title">خواندنی‌ها</div>
-      <a className="more-link" href="blog.html">
-        مطالب بیشتر
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="1.4em"
-          height="1.4em"
-        >
-          <path
-            fill="currentColor"
-            d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20z"
-          />
-        </svg>
-      </a>
-    </div>
-
-    <div className="row g-4 p-0 px-md-4">
-      <div className="col-12 col-sm-6 col-lg-3">
-        <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
-          <div className="card-inner p-2 h-100">
-            <div className="image-wrap">
-              <img src="assets/img/blog-1.jpg" alt="چادر مسافرتی" loading="lazy" />
-            </div>
-            <div className="card-footer">
-              <p className="card-text">چادر مسافرتی؛ ضد آب یا پارچه‌ای؟</p>
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-13.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-14.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-15.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-16.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </a>
-      </div>
+        </section>
+        <section className="best-sales-section mt-5 position-relative rounded-4 overflow-hidden">
+          <h2 className="text-center py-3 fw-semibold fs-4">
+            <i className="fa fa-bolt me-2 fs-6"></i>
+            محبوب‌ترین محصولات
+          </h2>
 
-      <div className="col-12 col-sm-6 col-lg-3">
-        <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
-          <div className="card-inner h-100">
-            <div className="image-wrap">
-              <img src="assets/img/blog-1.jpg" alt="ماشین آفرود" loading="lazy" />
+          <div className="swiper bestSales px-2 py-4">
+            <div className="swiper-wrapper">
+              <div className="swiper-slide">
+                <div className="product-slide-item">
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">1</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل سامسونگ</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">2</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل هاوایی</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">3</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل نوکیا</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide">
+                <div className="product-slide-item">
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">1</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل سامسونگ</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">2</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل هاوایی</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">3</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل نوکیا</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide">
+                <div className="product-slide-item">
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">1</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل سامسونگ</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">2</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل هاوایی</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">3</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل نوکیا</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div className="swiper-slide">
+                <div className="product-slide-item">
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-1.jpg" alt="Samsung" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">1</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل سامسونگ</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-2.jpg" alt="Huawei" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">2</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل هاوایی</p>
+                    </div>
+                  </a>
+
+                  <a href="#" className="d-flex align-items-center justify-content-between product-link">
+                    <div className="product-image">
+                      <img src="assets/img/some-p-3.jpg" alt="Nokia" className="img-fluid" />
+                    </div>
+                    <div className="rank-number">3</div>
+                    <div className="product-info">
+                      <p>گوشی موبایل نوکیا</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div className="card-footer">
-              <p className="card-text">۵ نکته مهم پیش از سفر آفرود در زمستان</p>
+
+            <div className="swiper-button-next custom-swiper-btn"></div>
+            <div className="swiper-button-prev custom-swiper-btn"></div>
+          </div>
+
+          <a href="#" className="see-all text-center d-block mt-3">مشاهده‌ی تمام محصولات</a>
+        </section>
+        <section className="some-products border-radius-3xl border border-gray-300 mt-4 overflow-hidden">
+          <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-1.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-2.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-3.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-4.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-5.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-6.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-7.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-8.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-9.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-10.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-11.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-12.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+              <div className="some-products-box p-4">
+                <div className="some-products-title">
+                  <h4 className="fs-6 fw-bold">گوشی موبایل</h4>
+                  <span className="gray-600 fs-7">بر اساس بازدید های شما</span>
+                </div>
+                <div className="some-products-images mt-3">
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-13.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-14.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-15.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                  <a href="" title="" className="d-flex justify-content-center align-items-center p-3">
+                    <img src="assets/img/some-p-16.jpg" alt="" title="" className="img-fluid" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </a>
-      </div>
-
-      <div className="col-12 col-sm-6 col-lg-3">
-        <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
-          <div className="card-inner h-100">
-            <div className="image-wrap">
-              <img src="assets/img/blog-1.jpg" alt="کوله پشتی کوهنوردی" loading="lazy" />
+        </section>
+        <section className="readable-articles mt-5" dir="rtl">
+          <div className="container-fluid">
+            <div className="d-flex align-items-center justify-content-between header mb-4 px-2 px-md-4">
+              <div className="section-title">خواندنی‌ها</div>
+              <a className="more-link" href="blog.html">
+                مطالب بیشتر
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="1.4em"
+                  height="1.4em"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20z"
+                  />
+                </svg>
+              </a>
             </div>
-            <div className="card-footer">
-              <p className="card-text">وسایل ضروری برای یک کوهنوردی ایمن</p>
+
+            <div className="row g-4 p-0 px-md-4">
+              <div className="col-12 col-sm-6 col-lg-3">
+                <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
+                  <div className="card-inner p-2 h-100">
+                    <div className="image-wrap">
+                      <img src="assets/img/blog-1.jpg" alt="چادر مسافرتی" loading="lazy" />
+                    </div>
+                    <div className="card-footer">
+                      <p className="card-text">چادر مسافرتی؛ ضد آب یا پارچه‌ای؟</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="col-12 col-sm-6 col-lg-3">
+                <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
+                  <div className="card-inner h-100">
+                    <div className="image-wrap">
+                      <img src="assets/img/blog-1.jpg" alt="ماشین آفرود" loading="lazy" />
+                    </div>
+                    <div className="card-footer">
+                      <p className="card-text">۵ نکته مهم پیش از سفر آفرود در زمستان</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="col-12 col-sm-6 col-lg-3">
+                <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
+                  <div className="card-inner h-100">
+                    <div className="image-wrap">
+                      <img src="assets/img/blog-1.jpg" alt="کوله پشتی کوهنوردی" loading="lazy" />
+                    </div>
+                    <div className="card-footer">
+                      <p className="card-text">وسایل ضروری برای یک کوهنوردی ایمن</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="col-12 col-sm-6 col-lg-3">
+                <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
+                  <div className="card-inner h-100">
+                    <div className="image-wrap">
+                      <img src="assets/img/blog-1.jpg" alt="لوازم آشپزی کمپینگ" loading="lazy" />
+                    </div>
+                    <div className="card-footer">
+                      <p className="card-text">لوازم آشپزی مناسب سفر و کمپینگ</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-        </a>
-      </div>
-
-      <div className="col-12 col-sm-6 col-lg-3">
-        <a href="single-blog.html" className="article-card d-block text-decoration-none text-dark">
-          <div className="card-inner h-100">
-            <div className="image-wrap">
-              <img src="assets/img/blog-1.jpg" alt="لوازم آشپزی کمپینگ" loading="lazy" />
-            </div>
-            <div className="card-footer">
-              <p className="card-text">لوازم آشپزی مناسب سفر و کمپینگ</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
+        </section>
+      </main>
 </Master>
   );
 }

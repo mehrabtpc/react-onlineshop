@@ -5,6 +5,298 @@ export default function Home() {
   return (
     <Master>
       <br /><br /><br />
+
+      <div className="container mt-xxxx-large">
+        <div className="story-section my-3 text-center px-5">
+          <div className="row">
+            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-around align-items-center mb-3">
+              {/* Story Item:start */}
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="0">
+                <img src="assets/img/story-1.jpg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">سشوار</strong>
+              </div>
+              {/* Story Item:end */}
+
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="1">
+                <img src="assets/img/story-2.jpg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">دکوری</strong>
+              </div>
+
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="2">
+                <img src="assets/img/story-3.jpg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">تخفیف</strong>
+              </div>
+
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="3">
+                <img src="assets/img/story-4.jpeg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">بهداشتی</strong>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 d-flex justify-content-around align-items-center mb-3">
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="4">
+                <img src="assets/img/story-5.jpeg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">وقت سفر</strong>
+              </div>
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="5">
+                <img src="assets/img/story-7.jpeg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">پیراهن</strong>
+              </div>
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="6">
+                <img src="assets/img/story-8.jpeg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">آرایش </strong>
+              </div>
+              <div className="story-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-index="7">
+                <img src="assets/img/story-6.jpeg" alt="" className="img-fluid border-radius-circle" />
+                <strong className="fs-7">برترین‌ها</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal */}
+      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content story-content">
+            <div className="modal-body d-flex flex-column align-items-center">
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+              <div className="story-videos-box mt-3">
+                <div className="row profile-box p-2 d-flex justify-content-between font-vazir">
+                  <div className="col-auto">
+                    <img src="assets/img/profile2.png" alt="" />
+                    <span className="px-2 text-white font-sans fw-bold">Saeid Tohidi</span>
+                  </div>
+                  <div className="col-auto">
+                    <div className="btn btn-primary">دنبال کنید</div>
+                  </div>
+                </div>
+                <div className="row feedback-box p-2 d-flex flex-column text-white font-sans mt-5">
+                  <div className="col-auto text-white text-center">
+                    <i className="fa-regular fa-heart"></i>
+                    <div className="px-2">18</div>
+                  </div>
+                  <div className="col-auto mt-3 text-center">
+                    <div className="story-comment">
+                      <i className="fa-regular fa-comment"></i>
+                    </div>
+                    <div className="px-2">14</div>
+                  </div>
+                </div>
+                <div className="story-video-title text-white fw-bold font-sans">
+                  <span>عنوان معرفی محصول</span>
+                </div>
+                <video id="story-slider" controls loop="loop">
+                  <source src="assets/img/1111.mp4" type="video/mp4" />
+                </video>
+                <ul className="story-navigation d-flex flex-md-column">
+                  <li className="story-videos">
+                    <img className="story-thumb" src="assets/img/thumb1.jpg" alt="preview1" data-video="images/1111.mp4" />
+                  </li>
+                  <li className="story-videos">
+                    <img className="story-thumb" src="assets/img/thumb2.jpg" alt="preview2" data-video="images/2222.mp4" />
+                  </li>
+                  <li className="story-videos">
+                    <img className="story-thumb" src="assets/img/thumb3.jpg" alt="preview3" data-video="images/3333.mp4" />
+                  </li>
+                  <li className="story-videos">
+                    <img className="story-thumb" src="assets/img/thumb4.jpg" alt="preview4" data-video="images/4444.mp4" />
+                  </li>
+                </ul>
+                <div className="swiper-button-next"></div>
+                <div className="swiper-button-prev"></div>
+              </div>
+
+              <div className="swiper story-other-prd mt-3">
+                <div className="swiper-wrapper">
+                  <div className="swiper-slide">
+                    <a href="#">
+                      <div className="other-prd bg-white d-flex align-items-center">
+                        <div className="p-2 px-0"></div>
+                        <div className="bs-img">
+                          <img src="assets/img/bs-mobile.jpg" alt="" />
+                        </div>
+                        <div className="bs-detail p-2 text-color">
+                          <span>
+                            گوشی موبایل سامسونگ مدل Galaxy A15 دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#">
+                      <div className="other-prd bg-white d-flex align-items-center">
+                        <div className="p-2 px-0"></div>
+                        <div className="bs-img">
+                          <img src="assets/img/bs-mobile.jpg" alt="" />
+                        </div>
+                        <div className="bs-detail p-2 text-color">
+                          <span>
+                            گوشی موبایل سامسونگ مدل Galaxy A15 دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="swiper-slide">
+                    <a href="#">
+                      <div className="other-prd bg-white d-flex align-items-center">
+                        <div className="p-2 px-0"></div>
+                        <div className="bs-img">
+                          <img src="assets/img/bs-mobile.jpg" alt="" />
+                        </div>
+                        <div className="bs-detail p-2 text-color">
+                          <span>
+                            گوشی موبایل سامسونگ مدل Galaxy A15 دو سیم کارت ظرفیت 128 گیگابایت و رم 4 گیگابایت - ویتنام
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Header::start */}
+      <div className="w-100 px-3">
+        <div className="swiper heroSlider rounded-3 position-relative">
+          <div className="swiper-wrapper">
+            <a href="#" className="swiper-slide">
+              <img src="assets/img/header-slider-1.jpg" alt="" className="hero-slide-img w-100" />
+            </a>
+            <a href="#" className="swiper-slide">
+              <img src="assets/img/header-slider-2.jpg" alt="" className="hero-slide-img w-100" />
+            </a>
+            <a href="#" className="swiper-slide">
+              <img src="assets/img/header-slider-3.jpg" alt="" className="hero-slide-img w-100" />
+            </a>
+          </div>
+
+          {/* SVGهای تزئینی */}
+          <svg
+            className="position-absolute hero-left-svg d-none d-md-block"
+            width="70"
+            height="255"
+            viewBox="0 0 76 285"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_6_41)">
+              <path d="M70 275V10C70 86 14 91.0878 14 142.752C14 194.416 70 201 70 275Z" fill="white"></path>
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_6_41"
+                x="0"
+                y="0"
+                width="76"
+                height="285"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                ></feColorMatrix>
+                <feOffset dx="-4"></feOffset>
+                <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"></feColorMatrix>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6_41"></feBlend>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_41" result="shape"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+
+          <svg
+            className="position-absolute hero-right-svg d-none d-md-block"
+            width="70"
+            height="255"
+            viewBox="0 0 76 285"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_6_41)">
+              <path d="M70 275V10C70 86 14 91.0878 14 142.752C14 194.416 70 201 70 275Z" fill="white"></path>
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_6_41"
+                x="0"
+                y="0"
+                width="76"
+                height="285"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix"></feFlood>
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                ></feColorMatrix>
+                <feOffset dx="-4"></feOffset>
+                <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+                <feComposite in2="hardAlpha" operator="out"></feComposite>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"></feColorMatrix>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_6_41"></feBlend>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_41" result="shape"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+
+          <svg
+            className="position-absolute hero-bottom-svg d-none d-md-block"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 480 110"
+            width="480"
+            height="110"
+            style={{ filter: "drop-shadow(0 -7px 25px rgba(0,0,0,0.3))" }}
+          >
+            <defs>
+              <path
+                d="M-607 -202L1073 -202L1073 0C679.8 0 461.36 0 417.67 0C368 0 358 50 327.34 50C310.37 50 174.64 50 157.67 50C128 50 118 0 67 0C22.07 0 -202.6 0 -607 0L-607 -202Z"
+                id="dixoAXFOW"
+              ></path>
+            </defs>
+            <use xlinkHref="#dixoAXFOW" opacity="1" fill="#ffffff" fillOpacity="1"></use>
+          </svg>
+
+          <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </div>
+      {/* Header::end */}
+
+        <div className="banner container d-md-block d-none my-5">
+          <div className="row">
+            <div className="col-12">
+              <a href="" title="" className="banner-item">
+                <div className="">
+                  {" "}
+                  {/* wrapper خارجی */}
+                  <div className="">
+                    {" "}
+                    {/* inner که transform روی آن می‌رود */}
+                    <img src="assets/img/md-banner.jpg" alt="" className="w-100 border-radius-3xl" />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       <main className="container mt-5">
         <section className="categories mt-5">
           <h2 className="text-center fs-4">دسته بندی ها</h2>

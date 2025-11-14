@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import banner from '../assets/img/ads-banner.jpg';
-import logo from '../assets/img/logo-md.png'
 export default function Header() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -8,7 +6,7 @@ export default function Header() {
     // شبیه‌سازی لودر
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 0);
 
     return () => clearTimeout(timer);
   }, []);
@@ -34,7 +32,7 @@ export default function Header() {
 
                 <div className="top-mobile-navbar-middle d-flex justify-content-between align-items-center">
                   <a href="javascript:void(0)" className="navbar-brand">
-                    <img src={banner} alt="لوگوی شاپیک" className="blur-up"/>
+                    <img src="assets/img/ads-banner.jpg" alt="لوگوی شاپیک" className="blur-up"/>
                   </a>
                 </div>
 
@@ -136,7 +134,7 @@ export default function Header() {
     <div className="custom-navbar" id="customNavbar">
       {/* Ads Banner */}
       <a href="" className="ads-banner" title="">
-        <img src={banner} alt="" className="img-fluid object-cover"/>
+        <img src="assets/img/ads-banner.jpg" alt="" className="img-fluid object-cover"/>
       </a>
 
       {/* Top Navbar */}
@@ -144,7 +142,7 @@ export default function Header() {
         <div className="container d-flex justify-content-between align-items-center">
           <div className="top-nav-right d-flex justify-content-between align-items-center">
             <a href="index.html" className="navbar-brand" title="">
-              <img src={logo} alt="لوگوی شاپیک"/>
+              <img src="assets/img/logo-md.png" alt="لوگوی شاپیک"/>
             </a>
 
             <div className="main-search position-relative">
@@ -288,6 +286,112 @@ export default function Header() {
             </a>
           </div>
         </div>
+
+        <div className="main-mobile-navbar pb-1">
+  {/* Container:start */}
+  <div className="container d-flex justify-content-between align-items-center">
+    {/* Main Mobile Navbar Right:start */}
+    <div className="main-mobile-navbar-right">
+      {/* Search Form:start */}
+      <form action="search.html" className="position-relative">
+        <input
+          className="form-control border-0 fs-6 fw-normal bg-gray-150 border-radius-3xl py-2"
+          type="search"
+          placeholder="جستجو"
+        />
+        <button className="btn position-absolute" type="submit">
+          <i className="fab fa-sistrix text-light-gray fw-md fs-5"></i>
+        </button>
+      </form>
+      {/* Search Form:end */}
+    </div>
+    {/* Main Mobile Navbar Right:end */}
+
+    {/* Main Mobile Navbar Left:start */}
+    <div className="main-mobile-navbar-left">
+      {/* Login and Register:start */}
+      <a href="login.html" className="btn text-dark-blue border-radius-3xl" title="">
+        {/*begin::Svg Icon */}
+        <svg
+          className="rotate-3d me-1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          version="1.1"
+        >
+          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+            <rect x="0" y="0" width="24" height="24" />
+            <path
+              d="M14.0069431,7.00607258 C13.4546584,7.00607258 13.0069431,6.55855153 13.0069431,6.00650634 C13.0069431,5.45446114 13.4546584,5.00694009 14.0069431,5.00694009 L15.0069431,5.00694009 C17.2160821,5.00694009 19.0069431,6.7970243 19.0069431,9.00520507 L19.0069431,15.001735 C19.0069431,17.2099158 17.2160821,19 15.0069431,19 L3.00694311,19 C0.797804106,19 -0.993056895,17.2099158 -0.993056895,15.001735 L-0.993056895,8.99826498 C-0.993056895,6.7900842 0.797804106,5 3.00694311,5 L4.00694793,5 C4.55923268,5 5.00694793,5.44752105 5.00694793,5.99956624 C5.00694793,6.55161144 4.55923268,6.99913249 4.00694793,6.99913249 L3.00694311,6.99913249 C1.90237361,6.99913249 1.00694311,7.89417459 1.00694311,8.99826498 L1.00694311,15.001735 C1.00694311,16.1058254 1.90237361,17.0008675 3.00694311,17.0008675 L15.0069431,17.0008675 C16.1115126,17.0008675 17.0069431,16.1058254 17.0069431,15.001735 L17.0069431,9.00520507 C17.0069431,7.90111468 16.1115126,7.00607258 15.0069431,7.00607258 L14.0069431,7.00607258 Z"
+              fill="#000000"
+              fillRule="nonzero"
+              opacity="0.3"
+              transform="translate(9.006943, 12.000000) scale(-1, 1) rotate(-90.000000) translate(-9.006943, -12.000000) "
+            />
+            <rect
+              fill="#000000"
+              opacity="0.3"
+              transform="translate(14.000000, 12.000000) rotate(-270.000000) translate(-14.000000, -12.000000) "
+              x="13"
+              y="6"
+              width="2"
+              height="12"
+              rx="1"
+            />
+            <path
+              d="M21.7928932,9.79289322 C22.1834175,9.40236893 22.8165825,9.40236893 23.2071068,9.79289322 C23.5976311,10.1834175 23.5976311,10.8165825 23.2071068,11.2071068 L20.2071068,14.2071068 C19.8165825,14.5976311 19.1834175,14.5976311 18.7928932,14.2071068 L15.7928932,11.2071068 C15.4023689,10.8165825 15.4023689,10.1834175 15.7928932,9.79289322 C16.1834175,9.40236893 16.8165825,9.40236893 17.2071068,9.79289322 L19.5,12.0857864 L21.7928932,9.79289322 Z"
+              fill="#000000"
+              fillRule="nonzero"
+              transform="translate(19.500000, 12.000000) rotate(-90.000000) translate(-19.500000, -12.000000) "
+            />
+          </g>
+        </svg>
+        {/*end::Svg Icon*/}
+        ورود
+      </a>
+      {/* Login and Register:end */}
+
+      {/* Shopping Cart Button:start */}
+      <a
+        href="empty-cart.html"
+        className="btn shopping-cart-btn p-2 border-radius-3xl position-relative"
+        title=""
+      >
+        {/*begin::Svg Icon*/}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          version="1.1"
+        >
+          <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+            <rect x="0" y="0" width="24" height="24" />
+            <path
+              d="M18.1446364,11.84388 L17.4471627,16.0287218 C17.4463569,16.0335568 17.4455155,16.0383857 17.4446387,16.0432083 C17.345843,16.5865846 16.8252597,16.9469884 16.2818833,16.8481927 L4.91303792,14.7811299 C4.53842737,14.7130189 4.23500006,14.4380834 4.13039941,14.0719812 L2.30560137,7.68518803 C2.28007524,7.59584656 2.26712532,7.50338343 2.26712532,7.4104669 C2.26712532,6.85818215 2.71484057,6.4104669 3.26712532,6.4104669 L16.9929851,6.4104669 L17.606173,3.78251876 C17.7307772,3.24850086 18.2068633,2.87071314 18.7552257,2.87071314 L20.8200821,2.87071314 C21.4717328,2.87071314 22,3.39898039 22,4.05063106 C22,4.70228173 21.4717328,5.23054898 20.8200821,5.23054898 L19.6915238,5.23054898 L18.1446364,11.84388 Z"
+              fill="#000000"
+              opacity="0.3"
+            />
+            <path
+              d="M6.5,21 C5.67157288,21 5,20.3284271 5,19.5 C5,18.6715729 5.67157288,18 6.5,18 C7.32842712,18 8,18.6715729 8,19.5 C8,20.3284271 7.32842712,21 6.5,21 Z M15.5,21 C14.6715729,21 14,20.3284271 14,19.5 C14,18.6715729 14.6715729,18 15.5,18 C16.3284271,18 17,18.6715729 17,19.5 C17,20.3284271 16.3284271,21 15.5,21 Z"
+              fill="#000000"
+            />
+          </g>
+        </svg>
+        {/*end::Svg Icon*/}
+        <span className="badge bg-danger position-absolute shop-cart-badge border border-white border-2 border-radius-3xl">
+          4
+        </span>
+      </a>
+      {/* Shopping Cart Button:end */}
+    </div>
+    {/* Main Mobile Navbar Left:end */}
+  </div>
+  {/* Container:end */}
+</div>
       </nav>
     </div>
   );

@@ -1,8 +1,86 @@
-import React from "react";
 import Master from "../Layouts/Master";
 import Story from "./Story";
+import React, { useEffect,useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 export default function Home() {
+    //it should come from DB
+    const favoriteProducts = [
+    {
+      id: 1,
+      products: [
+        { id: 1, name: 'گوشی موبایل سامسونگ', image: 'assets/img/some-p-1.jpg', rank: 1 },
+        { id: 2, name: 'گوشی موبایل هاوایی', image: 'assets/img/some-p-2.jpg', rank: 2 },
+        { id: 3, name: 'گوشی موبایل نوکیا', image: 'assets/img/some-p-3.jpg', rank: 3 }
+      ]
+    },
+    {
+      id: 2,
+      products: [
+        { id: 4, name: 'لپ تاپ اپل', image: 'assets/img/some-p-4.jpg', rank: 1 },
+        { id: 5, name: 'لپ تاپ ایسوس', image: 'assets/img/some-p-5.jpg', rank: 2 },
+        { id: 6, name: 'لپ تاپ دل', image: 'assets/img/some-p-6.jpg', rank: 3 }
+      ]
+    },
+
+    {
+      id: 3,
+      products: [
+        { id: 4, name: 'لپ تاپ اپل', image: 'assets/img/some-p-4.jpg', rank: 1 },
+        { id: 5, name: 'لپ تاپ ایسوس', image: 'assets/img/some-p-5.jpg', rank: 2 },
+        { id: 6, name: 'لپ تاپ دل', image: 'assets/img/some-p-6.jpg', rank: 3 }
+      ]
+    },
+    {
+      id: 4,
+      products: [
+        { id: 4, name: 'لپ تاپ اپل', image: 'assets/img/some-p-4.jpg', rank: 1 },
+        { id: 5, name: 'لپ تاپ ایسوس', image: 'assets/img/some-p-5.jpg', rank: 2 },
+        { id: 6, name: 'لپ تاپ دل', image: 'assets/img/some-p-6.jpg', rank: 3 }
+      ]
+    }
+
+  ];
+  const BestSales = () => {
+    const swiperRef = useRef(null);
+
+    useEffect(() => {
+      if (swiperRef.current) {
+        const bestSalesSwiper = new Swiper('.bestSales', {
+          modules: [Navigation],
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          slidesPerView: 1,
+          spaceBetween: 20,
+          breakpoints: {
+            640: { slidesPerView: 2, spaceBetween: 15 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 25 },
+          },
+          on: {
+            init: function () {
+              console.log('Swiper initialized');
+            },
+          },
+        });
+
+        // منتظر موندن برای لود کامل محتوا
+        setTimeout(() => {
+          bestSalesSwiper.update();
+        }, 100);
+
+        return () => {
+          bestSalesSwiper.destroy();
+        };
+      }
+    }, []);
+  }
+  
   return (
     <Master>
       <br /><br /><br />
@@ -690,95 +768,56 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="best-brands border-radius-3xl border border-gray-300 mt-4 pb-4">
-          <h2 className="text-center my-4 section-title fs-4">
-            <i className="fa fa-star"></i>
-            محبوب ترین برندها
-          </h2>
-          <div className="swiper brandsSlider">
-            <div className="swiper-wrapper">
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-1.png" alt="" title="" className="img-fluid p-3" />
+    <section className="best-sales-section mt-5 position-relative rounded-4 overflow-hidden">
+      <h2 className="text-center py-3 fw-semibold fs-4">
+        <i className="fa fa-bolt me-2 fs-6"></i>
+        محبوب‌ترین محصولات
+      </h2>
+
+      <div className="px-2 py-4">
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: '.custom-swiper-next',
+            prevEl: '.custom-swiper-prev',
+          }}
+          slidesPerView={1}
+          spaceBetween={20}
+          breakpoints={{
+            640: { slidesPerView: 2, spaceBetween: 15 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 25 },
+          }}
+        >
+          {favoriteProducts.map((slide) => (
+            <SwiperSlide key={slide.id}>
+              <div className="product-slide-item">
+                {slide.products.map((product) => (
+                  <a
+                    key={product.id}
+                    href="#"
+                    className="d-flex align-items-center justify-content-between product-link"
+                  >
+                    <div className="product-image">
+                      <img src={product.image} alt={product.name} className="img-fluid" />
+                    </div>
+                    <div className="rank-number">{product.rank}</div>
+                    <div className="product-info">
+                      <p>{product.name}</p>
+                    </div>
                   </a>
-                </div>
+                ))}
               </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-2.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-3.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-4.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-8.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-7.jpg" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-8.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-9.jpg" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-10.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-11.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-slide position-relative">
-                <div className="brands-item d-flex justify-content-center align-items-center">
-                  <a href="" title="" className="stretched-link">
-                    <img src="assets/img/brand-13.png" alt="" title="" className="img-fluid p-3" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-button-next bg-light border-radius-circle"></div>
-            <div className="swiper-button-prev bg-light border-radius-circle"></div>
-          </div>
-        </section>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <div className="swiper-button-next custom-swiper-btn custom-swiper-next"></div>
+        <div className="swiper-button-prev custom-swiper-btn custom-swiper-prev"></div>
+      </div>
+
+      <a href="#" className="see-all text-center d-block mt-3">مشاهده‌ی تمام محصولات</a>
+    </section>
         <section className="some-products border-radius-3xl border border-gray-300 mt-4 overflow-hidden">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3">

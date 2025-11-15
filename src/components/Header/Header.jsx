@@ -6,7 +6,7 @@ export default function Header() {
     // شبیه‌سازی لودر
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);

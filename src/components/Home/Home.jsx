@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 
 export default function Home() {
     //it should come from DB
+    
     const favoriteProducts = [
     {
       id: 1,

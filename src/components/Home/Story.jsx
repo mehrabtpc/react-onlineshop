@@ -5,8 +5,8 @@ export default function Story() {
   const [selectedStory, setSelectedStory] = useState(false);
   const [stories, setStories] = useState([]);
 
-  async function getData() {
-    const response = await fetch("https://api.elinorboutique.com/v1/front/home");
+  async function getData() {    
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/v1/front/home`);
     const json = await response.json();
     console.log(json.data.response.stories);
 
